@@ -2,7 +2,7 @@ import React from 'react'
 
 function TopNav() {
     return (
-        <>
+        <> 
             <div className="container-fluid py-2 border-bottom d-none d-lg-block">
   <div className="container">
     <div className="row">

@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
+NavLink
 
 function Navbar() {
     return (
@@ -14,14 +15,19 @@ function Navbar() {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarCollapse">
                         <div className="navbar-nav ms-auto py-0">
-                            <Link to="/" className="nav-item nav-link active">Home</Link >
-                            <Link to="about" className="nav-item nav-link">About</Link >
-                            <Link to="service" className="nav-item nav-link">Service</Link >
+                            <NavLink to="/" className={({ isActive }) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}>Home</NavLink >
+                            <NavLink to="/about" className={({ isActive }) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}>About</NavLink >
+                            <NavLink to="/service" className={({ isActive }) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}>Service</NavLink ><NavLink to="/blog" className={({ isActive }) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}>About</NavLink >
+
+
+
+
+
                             <Link to="price" className="nav-item nav-link">Pricing</Link >
                             <div className="nav-item dropdown">
                                 <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</Link >
                                 <div className="dropdown-menu m-0">
-                                    <Link to="blog" className="dropdown-item">Blog Grid</Link >
+                                    <NavLink to="/blog" className={({ isActive }) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}>Blog</NavLink >
                                     <Link to="detail" className="dropdown-item">Blog Detail</Link >
                                     <Link to="team" className="dropdown-item">The Team</Link >
                                     <Link to="testimonial" className="dropdown-item">Testimonial</Link >
