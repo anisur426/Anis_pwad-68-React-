@@ -19,28 +19,23 @@ function Navbar() {
                             <NavLink to="/about" className={({ isActive }) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}>About</NavLink >
                             <NavLink to="/service" className={({ isActive }) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}>Service</NavLink ><NavLink to="/blog" className={({ isActive }) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}>About</NavLink >
 
-
-
-
-
-                            <Link to="price" className="nav-item nav-link">Pricing</Link >
                             <div className="nav-item dropdown">
-                                <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</Link >
+                                <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</Link >
                                 <div className="dropdown-menu m-0">
-                                    <NavLink to="/blog" className={({ isActive }) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}>Blog</NavLink >
-                                    <Link to="detail" className="dropdown-item">Blog Detail</Link >
-                                    <Link to="team" className="dropdown-item">The Team</Link >
-                                    <Link to="testimonial" className="dropdown-item">Testimonial</Link >
-                                    <Link to="appointment" className="dropdown-item">Appointment</Link >
-                                    <Link to="search" className="dropdown-item">Search</Link >
+                                    <NavLink to="/blog" className={({ isActive }) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}>All Blog</NavLink >
+
+                                    <NavLink to="/adblog" className={({ isActive }) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}>New Blog</NavLink >
+
+                                    <Link to="team" className="dropdown-item"></Link >
+
                                 </div>
                             </div>
                             <Link to="contact" className="nav-item nav-link">Contact</Link >
                         </div>
                     </div>
                 </nav>
-            </div>
-        </div>
+            </div >
+        </div >
     )
 }
 

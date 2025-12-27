@@ -4,7 +4,7 @@ import axios from 'axios';
 function Blog() {
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
-    getBlogs();
+    getBlog();
   }, []);
   function getBlog() {
     axios.get("http://localhost/api/Blog/").then(function (respons) {
