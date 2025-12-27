@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
-NavLink
 
 function Navbar() {
     return (
@@ -17,7 +16,7 @@ function Navbar() {
                         <div className="navbar-nav ms-auto py-0">
                             <NavLink to="/" className={({ isActive }) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}>Home</NavLink >
                             <NavLink to="/about" className={({ isActive }) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}>About</NavLink >
-                            <NavLink to="/service" className={({ isActive }) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}>Service</NavLink ><NavLink to="/blog" className={({ isActive }) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}>About</NavLink >
+                            <NavLink to="/service" className={({ isActive }) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}>Service</NavLink >
 
                             <div className="nav-item dropdown">
                                 <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</Link >
@@ -30,7 +29,8 @@ function Navbar() {
 
                                 </div>
                             </div>
-                            <Link to="contact" className="nav-item nav-link">Contact</Link >
+                             <NavLink to="contact" className={({ isActive }) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}>Contact</NavLink >
+                           
                         </div>
                     </div>
                 </nav>
