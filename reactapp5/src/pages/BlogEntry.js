@@ -9,7 +9,7 @@ function BlogEntry() {
         setInputs(values => ({ ...values, [name]: value }));
     }
     function hnadleSubmit(e) {
-        e.preventDefult();
+        e.preventDefault();
         blogPost();
 
     }
@@ -24,7 +24,7 @@ function BlogEntry() {
     return (
         <div className='container'>
             <h2>Blog Entry</h2>
-            <form className='form'>
+            <form className='form' onSubmit={hnadleSubmit}>
                 <input type='text' name='title' value={inputs.title} onChange={hnadleChange}
                     className='form-control' placeholder='enter title' /><br />
                 <textarea name='details' value={inputs.details} onChange={hnadleChange} className='form-control'></textarea>

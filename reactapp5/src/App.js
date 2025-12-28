@@ -6,6 +6,7 @@ import About from './pages/About';
 import Service from "./pages/Service"
 import Home from './pages/Home';
 import BlogEntry from './pages/BlogEntry';
+import BlogEntry1 from './pages/BlogEntry1';
 function App() {
   return (
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route path='/Service' element={<Service />} />
         <Route path='/adblog' element={<BlogEntry />} />
+         <Route path='/blogenty1' element={<BlogEntry1/>} />
 
       </Routes>
 
