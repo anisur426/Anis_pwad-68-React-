@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
-NavLink
 
 function Navbar() {
     return (
@@ -32,7 +31,8 @@ function Navbar() {
 
                                 </div>
                             </div>
-                            <Link to="contact" className="nav-item nav-link">Contact</Link >
+                             <NavLink to="contact" className={({ isActive }) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}>Contact</NavLink >
+                           
                         </div>
                     </div>
                 </nav>

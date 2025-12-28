@@ -18,9 +18,15 @@ root.render(
       <TopNav />
       <Navbar />
       
+<<<<<<< HEAD
 
       <App />
       <Footer />
+=======
+      <App />
+      <Footer />
+
+>>>>>>> 735d23468ddbc8b059ced3b0241a2855a3987651
     </BrowserRouter>
   </React.StrictMode>
 );
